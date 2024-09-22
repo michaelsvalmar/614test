@@ -31,9 +31,8 @@ jobs:
         sudo apt update
         sudo apt-get install terraform
         
-    - name: Show Destroy plan
-      run: terraform plan -destroy
-      continue-on-error: true
+    - name: Terraform Init
+      run: terraform init
     
     - name: Terraform Destroy
       id: destroy

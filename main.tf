@@ -19,3 +19,11 @@ resource "aws_instance" "my_server" {
     Name = "my ec2"
   }
 }
+
+terraform {
+  backend "s3" {
+    bucket = "mz-swen514-terraform"
+    key    = "tfstate"
+    region = "us-east-1"
+  }
+}

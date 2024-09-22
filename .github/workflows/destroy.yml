@@ -1,4 +1,4 @@
-name: Deploy WordPress on AWS using Terraform 
+name: Terraform Destroy
 on:
   workflow_dispatch:
     inputs:

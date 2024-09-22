@@ -35,7 +35,7 @@ jobs:
       id: destroy
       run: terraform destroy -auto-approve
 
-    - name: Delete plan file
-      if: steps.destroy.outcome == 'success'
-      run: aws s3 rm s3://mz-swen514-terraform/tfstate .
+    #- name: Delete plan file
+    #  if: steps.destroy.outcome == 'success'
+    #  run: aws s3 rm s3://mz-swen514-terraform/tfstate 
       

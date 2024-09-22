@@ -2,7 +2,7 @@ name: Deploy WordPress on AWS using Terraform
 on:
   push:
     branches:
-      - main  # Set this to the branch you want to deploy from
+      - main  # Set this to the branch you want to deploy from 
 
 jobs:
   deploy:

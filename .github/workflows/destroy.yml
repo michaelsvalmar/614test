@@ -37,7 +37,7 @@ jobs:
     
     - name: Terraform Destroy
       id: destroy
-      run: terraform destroy -auto-approve
+      run: terraform destroy -auto-approve -var-file=variables.tfvars
 
     #- name: Delete plan file
     #  if: steps.destroy.outcome == 'success'

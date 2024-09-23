@@ -1,4 +1,4 @@
-name: Deploy WordPress on AWS using Terraform 
+name: Terraform Appply
 on:
 # Original - works fine on push
 #  push:

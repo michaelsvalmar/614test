@@ -1,4 +1,4 @@
-name: "Terraform"
+name: "Github Actions Activity"
 
 on:
   workflow_dispatch:

@@ -25,8 +25,8 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v2
       
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }} # Secret variable
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }} # Secret variable
           aws-region: ${{ vars.AWS_REGION }}  # Reference the repository variable
 
       - name: Setup Terraform
